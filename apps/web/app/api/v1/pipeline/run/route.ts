@@ -1,5 +1,5 @@
 import { PipelineRequestSchema } from "@curriculum/schemas";
-import { runPipeline } from "@curriculum/api/dist/pipeline/graph.js";
+import { runPipeline } from "@curriculum/api/src/pipeline/graph.js";
 import { ZodError } from "zod";
 
 export const config = {
