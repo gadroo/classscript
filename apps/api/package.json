@@ -1,0 +1,30 @@
+{
+  "name": "@curriculum/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup src/index.ts --format esm --dts --sourcemap --clean",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "echo 'lint not configured for api'"
+  },
+  "dependencies": {
+    "@curriculum/prompts": "workspace:*",
+    "@curriculum/rendering": "workspace:*",
+    "@curriculum/schemas": "workspace:*",
+    "@fastify/cors": "^11.0.0",
+    "@langchain/langgraph": "^1.0.2",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.2.1",
+    "nanoid": "^5.1.5",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.9.2"
+  }
+}
