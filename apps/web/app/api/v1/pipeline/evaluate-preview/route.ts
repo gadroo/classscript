@@ -1,5 +1,5 @@
 import { InstructorPreviewEvaluationRequestSchema } from "@curriculum/schemas";
-import { evaluateInstructorPreview } from "@curriculum/api/src/pipeline/preview-evaluator.js";
+import { evaluateInstructorPreview } from "@curriculum/api/pipeline/preview-evaluator";
 import { ZodError } from "zod";
 
 export const config = {

@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "exports": {
+    "./pipeline/graph": "./src/pipeline/graph.ts",
+    "./pipeline/preview-evaluator": "./src/pipeline/preview-evaluator.ts"
+  },
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsup src/index.ts --format esm --dts --sourcemap --clean",
